@@ -1,8 +1,11 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { useQuery } from "@apollo/react-hooks";
-import { QUERY_THOUGHTS } from "../utils/queries";
-import ReactionList from "../components/ReactionList";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+
+import ReactionList from '../components/ReactionList';
+
+import { useQuery } from '@apollo/react-hooks';
+import { QUERY_THOUGHTS } from '../utils/queries';
+
 
 const SingleThought = (props) => {
   const { id: thoughtId } = useParams();
